@@ -1,0 +1,40 @@
+:root {
+    --primary: #4f46e5;
+    --bg: #f9fafb;
+    --text: #111827;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: var(--bg); color: var(--text); scroll-behavior: smooth; }
+
+/* Navbar styling */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 8%; background: white; position: sticky; top: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1); z-index: 100;
+}
+
+.logo span { color: var(--primary); font-weight: bold; }
+
+.search-container { background: #f3f4f6; padding: 5px 15px; border-radius: 20px; display: flex; }
+.search-container input { border: none; background: transparent; outline: none; padding: 5px; }
+
+.nav-links { display: flex; list-style: none; gap: 20px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+
+.auth-btn { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; }
+
+/* Hero */
+.hero { background: #1f2937; color: white; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+/* Blog Grid */
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.post-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
+.post-card:hover { transform: translateY(-5px); }
+.post-content { padding: 20px; }
+.tag { color: var(--primary); font-size: 12px; font-weight: bold; text-transform: uppercase; }
+
+.section, .section-gray { padding: 60px 10%; text-align: center; }
+.section-gray { background: #e5e7eb; }
+.logout-link { background: none; border: none; color: red; cursor: pointer; text-decoration: underline; }
