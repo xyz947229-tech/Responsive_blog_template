@@ -18,10 +18,31 @@ function showContact() {
 
 function searchBlog() {
     let input = document.getElementById("searchInput").value.toLowerCase();
-    let blogs = document.querySelectorAll(".blog-card");
+    let homeSection = document.getElementById("home");
+    let blogs = Array.from(document.querySelectorAll(".blog-card"));
+
+    let matchedBlogs = [];
+    let unmatchedBlogs = [];
 
     blogs.forEach(blog => {
         let title = blog.querySelector("h3").innerText.toLowerCase();
-        blog.style.display = title.includes(input) ? "flex" : "none";
+
+        if (title.includes(input)) {
+            blog.style.display = "flex";
+            matchedBlogs.push(blog);
+        } else {
+            blog.style.display = "none";
+            unmatchedBlogs.push(blog);
+        }
     });
+
+    // Clear current order
+    homeSection.innerHTML = "";
+
+    // First add matched blogs
+    matchedBlogs.forEach(blog => homeSection.appendChild(blog));
+
+    // Then add unmatched blogs (hidden)
+    unmatchedBlogs.forEach(blog => homeSection.appendChild(blog));
 }
+
