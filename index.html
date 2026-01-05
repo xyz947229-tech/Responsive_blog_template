@@ -2,72 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viren's Pro Blog</title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Viren<span>Dev</span></div>
-        
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search blog...">
-            <button id="search-btn"><i class="fa fa-search"></i></button>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="login-btn" class="auth-btn">Google Login</button></li>
-            <li id="user-profile" style="display: none; align-items: center; gap: 10px;">
-                <img id="user-pic" src="" alt="User" style="width: 30px; border-radius: 50%;">
-                <button id="logout-btn" class="logout-link">Logout</button>
-            </li>
-        </ul>
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showAbout()">About</button>
+        <button onclick="showContact()">Contact</button>
     </nav>
+</header>
 
-    <header id="home" class="hero">
-        <h1>Welcome to My Blog</h1>
-        <p>Tech, Code, and Creativity</p>
-    </header>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search blogs...">
+    <button onclick="searchBlog()">Search</button>
+</div>
 
-    <div class="container">
-        <main class="blog-grid" id="blog-posts">
-            <article class="post-card" data-title="html basics">
-                <div class="post-content">
-                    <span class="tag">HTML</span>
-                    <h2>HTML Basics</h2>
-                    <p>Starting your journey with structure...</p>
-                </div>
-            </article>
-
-            <article class="post-card" data-title="css design">
-                <div class="post-content">
-                    <span class="tag">Design</span>
-                    <h2>CSS Mastery</h2>
-                    <p>Learning how to style the web beautifully...</p>
-                </div>
-            </article>
-        </main>
+<!-- HOME SECTION -->
+<section id="home">
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/200x130" alt="blog">
+        <div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Author Name</p>
+            <span>07 January | 6 min read</span>
+        </div>
     </div>
 
-    <section id="about" class="section-gray">
-        <h2>About This Project</h2>
-        <p>A responsive blog with Google Firebase Authentication.</p>
-    </section>
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/200x130" alt="blog">
+        <div>
+            <h3>Consectetur adipisicing elit</h3>
+            <p>Author Name</p>
+            <span>07 January | 5 min read</span>
+        </div>
+    </div>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/200x130" alt="blog">
+        <div>
+            <h3>Modern workspace ideas</h3>
+            <p>Author Name</p>
+            <span>07 January | 4 min read</span>
+        </div>
+    </div>
+</section>
 
-    <script type="module" src="index.js"></script>
+<!-- ABOUT SECTION -->
+<section id="about" class="hidden">
+    <h2>About Us</h2>
+    <p>
+        Welcome to My Blog. This platform is created to share knowledge,
+        ideas, and stories related to technology, coding, and creativity.
+    </p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="hidden">
+    <h2>Contact Us</h2>
+    <p>Email: myblog@example.com</p>
+    <p>Instagram: @myblog</p>
+</section>
+
+<script src="index.js"></script>
 </body>
 </html>
