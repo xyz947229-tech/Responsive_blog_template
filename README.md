@@ -1,16 +1,16 @@
 # Responsive_blog_template
 
-<u>Shweta</u> <br>
+**Shweta** <br>
 Role :Developer
 <br>
 
-<u>Deepika</u> <br> 
+**Deepika**<br> 
 Role :Presenter 
 <br>
 
-<u>Athulya</u><br>
+**Athulya**<br>
 Role :Debugger
 <br>
 
-<u>Azra</u>  <br>
+**Azra**  <br>
 Role :validator
