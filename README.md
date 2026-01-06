@@ -1,6 +1,6 @@
 # Responsive_blog_template
 
-Shweta <br><br>
+Shweta <br>
 Role :Developer
 <br>
 
