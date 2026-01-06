@@ -1,13 +1,16 @@
 # Responsive_blog_template
 
-Shweta 
+Shweta <br><br>
 Role :Developer
+<br>
 
-Deepika  
+Deepika <br> 
 Role :Presenter 
+<br>
 
-Athulya
+Athulya<br>
 Role :Debugger
+<br>
 
-Azra  
+Azra  <br>
 Role :validator
