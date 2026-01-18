@@ -2,71 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlog - Heaven for bloggers</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="util.css">
 </head>
 <body>
-
-<header>
-    <h1>My Blog</h1>
-    <nav>
-        <button onclick="showHome()">Home</button>
-        <button onclick="showAbout()">About</button>
-        <button onclick="showContact()">Contact</button>
-    </nav>
-</header>
-
-<div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search blogs...">
-    <button onclick="searchBlog()">Search</button>
-</div>
-
-<!-- HOME SECTION -->
-<section id="home">
-    <div class="blog-card">
-        <img src="https://via.placeholder.com/200x130" alt="blog">
-        <div>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Author Name</p>
-            <span>07 January | 6 min read</span>
-        </div>
+  <nav class="navigation" >
+    <div class="left">LogoHere</div>
+    <div class="right">
+        <input type="text" placeholder="Article search">
+        <button class="btn">Search</button>
     </div>
-
-    <div class="blog-card">
-        <img src="https://via.placeholder.com/200x130" alt="blog">
-        <div>
-            <h3>Consectetur adipisicing elit</h3>
-            <p>Author Name</p>
-            <span>07 January | 5 min read</span>
-        </div>
-    </div>
-
-    <div class="blog-card">
-        <img src="https://via.placeholder.com/200x130" alt="blog">
-        <div>
-            <h3>Modern workspace ideas</h3>
-            <p>Author Name</p>
-            <span>07 January | 4 min read</span>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about" class="hidden">
-    <h2>About Us</h2>
-    <p>
-        Welcome to My Blog. This platform is created to share knowledge,
-        ideas, and stories related to technology, coding, and creativity.
-    </p>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="hidden">
-    <h2>Contact Us</h2>
-    <p>Email: myblog@example.com</p>
-    <p>Instagram: @myblog</p>
-</section>
-
-<script src="index.js"></script>
+  </nav> 
+  <div class="content max-width-1 m-auto"></div>
+  <div class="footer max-width-2 m-auto"></div>
 </body>
 </html>
